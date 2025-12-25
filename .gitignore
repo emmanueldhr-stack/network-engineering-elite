@@ -1,0 +1,27 @@
+ #Python
+ _pycache_/
+*.py[cod]
+**4py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+# Ansible
+*.retry
+# Labs
+*.pkt
+*.gns3
+*.gns3a
+# Configuraciones sensibles
+*.key
+*.pem
+*.crt
+*secret*
+*password*
+*credential*
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
