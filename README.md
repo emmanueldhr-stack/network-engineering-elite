@@ -1,4 +1,4 @@
-[200~# Network Engineering Elite - Roadmap
+Network Engineering Elite - Roadmap
 
 **Duración:** 24 meses  
 **Carga recomendada:** 12–15 h/semana  
@@ -11,7 +11,7 @@ scripts/ #Scripts de automatización
 ansible/ #Playbooks y templates
 observability/ #Monitoreo y Metricas
 capstone/ #Proyecto final
-[200~
+
 ## Roadmap de 24 Meses
 
 ### FASE I — FUNDAMENTOS CIENTÍFICOS + TCP/IP PROFUNDO (Meses 1–4)

@@ -1,5 +1,5 @@
- #Python
- _pycache_/
+#Python
+_pycache_/
 *.py[cod]
 **4py.class
 *.so
@@ -7,12 +7,15 @@
 env/
 venv/
 .venv/
+
 # Ansible
 *.retry
+
 # Labs
 *.pkt
 *.gns3
 *.gns3a
+
 # Configuraciones sensibles
 *.key
 *.pem
