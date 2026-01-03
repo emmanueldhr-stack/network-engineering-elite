@@ -1,58 +1,76 @@
-Network Engineering Elite - Roadmap
+# Network Engineering Elite Roadmap
 
-**Duración:** 24 meses  
-**Carga recomendada:** 12–15 h/semana  
-**Resultado final:** Ingeniero capaz de dise;ar, operar, automatizar y justificar infraestructuras reales (enterprise / ISP / Cloud)
-##Estructura del Repositorio
-network-engineering-elite/
-docs/ #Documentación por area
-labs/ #Laboratorios y practicas
-scripts/ #Scripts de automatización
-ansible/ #Playbooks y templates
-observability/ #Monitoreo y Metricas
-capstone/ #Proyecto final
+Este repositorio documenta mi formación estructurada y progresiva
+en **ingeniería de redes, arquitectura, automatización y fundamentos formales**,
+siguiendo un roadmap de nivel universitario + profesional (CCNA → CCNP → CCIE/JNCIE).
 
-## Roadmap de 24 Meses
-
-### FASE I — FUNDAMENTOS CIENTÍFICOS + TCP/IP PROFUNDO (Meses 1–4)
-- Mes 1: Lógica, pruebas + OSI/TCP-IP + Wireshark
-- Mes 2: Álgebra aplicada + Subnetting como diseño
-- Mes 3: Señales + ARP/ICMP/DHCP/DNS + Troubleshooting
-- Mes 4: Sistemas digitales + Switching básico + Linux
-
-### FASE II — SWITCHING & ROUTING PROFESIONAL (Meses 5–8)
-- Mes 5: VLAN, STP, Static Routing
-- Mes 6: RSTP, EtherChannel, OSPF single-area
-- Mes 7: OSPF multi-area + QoS básico + medición
-- Mes 8: Multilayer + EIGRP + comparación técnica
-
-### FASE III — ROUTING AVANZADO + SERVICIOS (Meses 9–12)
-- Mes 9: OSPF avanzado + HSRP/VRRP
-- Mes 10: BGP fundamentals + NAT
-- Mes 11: BGP policies + QoS MQC
-- Mes 12: Redistribución + SNMP/NTP + monitoreo
-
-### FASE IV — SEGURIDAD, WAN, DC, SD-WAN (Meses 13–16)
-### FASE V — AUTOMATIZACIÓN, CLOUD, ARQUITECTURA (Meses 17–20)
-### FASE VI — SRE, GITOPS, CAPSTONE (Meses 21–24)
-
-## Recursos Incluidos
-
-- Scripts Python para automatización
-- Playbooks Ansible para gestión de configuración
-- Laboratorios con GNS3, ContainerLab y Packet Tracer
-- Templates de observabilidad (Prometheus/Grafana)
-- Documentación arquitectónica completa
-
-## Metodología
-
-1. **Teoría científica** primero (entender el porqué)
-2. **Práctica intensiva** en laboratorios
-3. **Automatización** desde el inicio
-4. **Documentación** profesional
-5. **Proyecto final** integrador
+No es un repositorio de certificados ni laboratorios aislados.
+Es un **registro verificable de razonamiento, diseño y toma de decisiones técnicas**.
 
 ---
 
-*"No memorizar comandos, hay que entiender principios."*
-EOF~
+## 🎯 Objetivo
+
+Desarrollar dominio real en:
+- Fundamentos matemáticos del razonamiento técnico
+- Protocolos y arquitectura de redes
+- Troubleshooting estructurado
+- Automatización y observabilidad
+- Pensamiento de arquitecto y SRE
+
+---
+
+## 🧭 Estructura del repositorio
+
+network-engineering-elite/
+├── docs/ # Documentación técnica estructurada
+│ ├── fundamentals/ # Fundamentos matemáticos y de red
+│ ├── networking/ # Protocolos y arquitectura
+│ ├── labs/ # Laboratorios prácticos
+│ ├── automation/ # Automatización y scripts
+│ └── architecture/ # Diseño y decisiones arquitectónicas
+├── standards/ # Principios y estándares de ingeniería
+└── progress/ # Seguimiento y métricas de aprendizaje
+
+---
+
+## 📚 Metodología
+
+Cada tema incluye:
+- Teoría formal
+- Ejemplos propios
+- Analogías en redes y seguridad
+- Errores comunes
+- Conclusiones técnicas
+- Documentación clara (Markdown)
+
+El enfoque prioriza:
+**entender → modelar → diseñar → verificar**.
+
+---
+
+## 🚀 Estado actual
+
+- ✅ **Fundamentos matemáticos (MIT Math for CS)** — En progreso
+  - Proposiciones, cuantificadores, implicaciones ✅
+  - Inducción matemática 🔄 En progreso
+- ⏳ **Networking base** — Iniciado (OSI/TCP-IP, Wireshark)
+- 📅 **Automatización y labs** — Próximos bloques
+
+---
+
+## 📌 Nota para revisores técnicos
+
+Este repositorio refleja **proceso**, no solo resultados.
+Las decisiones, errores y correcciones son intencionalmente visibles.
+
+Cada documento muestra:
+1. **Comprensión conceptual** antes de implementación
+2. **Aplicación práctica** a escenarios reales de red
+3. **Reflexión crítica** sobre alternativas y trade-offs
+
+> "No se trata de qué comandos sé, sino de qué problemas puedo resolver y por qué."
+
+---
+
+**Última actualización:** $(date 2026-01-02")
