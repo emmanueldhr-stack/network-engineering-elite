@@ -1,63 +1,26 @@
-# Class 04: Mathematical Induction
+# Induction
 
-**Fecha:** [2026-01-02]
-**Duración:** [2] horas
-**Checkpoint:** 🔄 En progreso
+**Fecha:** [2026-01-02] | **Estado:** ✅ Completado
 
-## 🎯 Objetivos
-- Comprender el principio de inducción matemática
-- Aplicar inducción a problemas de conteo y verificación
-- Conectar inducción con sistemas de estado en redes
 
-## 📚 Contenido
+## 1. Concepto Central
+La inducción matemática es un método de demostración que permite probar que una propiedad \( P(n) \) es verdadera para todos los números naturales \( n \), estableciendo un caso base y demostrando que si se cumple para un caso, se cumple para el siguiente.
 
-### 1. Principio de Inducción
-Inducción matemática demuestra que una propiedad P(n) es verdadera para todos los números naturales n si:
+## 2. Forma Lógica / Matemática
+- **Caso base:** Probar \( P(1) \) (o \( P(0) \)).
+- **Paso inductivo:** Probar que \( \forall k \ge 1, P(k) \rightarrow P(k+1) \).
+- **Conclusión:** \( \forall n \ge 1, P(n) \) es verdadera.
 
-1. **Caso base:** P(1) es verdadera
-2. **Paso inductivo:** Si P(k) es verdadera, entonces P(k+1) también es verdadera
+## 3. Aplicación a Ingeniería de Redes
+- **Verificación de configuraciones en topologías escalables:** Si un patrón de configuración (ej. OSPF) funciona para 1 router (caso base), y al agregar un router \( k+1 \) mantiene la propiedad (paso inductivo), entonces se puede confiar en que funcionará para N routers.
+- **Propagación de estado en protocolos:** Protocolos como Spanning Tree Protocol (STP) o los algoritmos de convergencia de routing pueden modelarse inductivamente: el estado inicial es estable (caso base), y cada mensaje o cambio preserva la estabilidad (paso inductivo).
+- **Actualizaciones rollouts:** Una actualización de software es segura si: 1) Funciona en un dispositivo de prueba (caso base). 2) Si funciona para k dispositivos, al aplicarla al dispositivo k+1 no rompe la red (paso inductivo). Esto justifica despliegues progresivos.
 
-**Esquema de prueba:**
-Probar P(1) (Caso base)
+## 4. Errores Comunes
+- Olvidar probar el caso base.
+- Asumir \( P(k) \) sin haberlo probado para todos los anteriores (en inducción simple).
+- Usar inducción para propiedades que no son realmente inductivas sobre los naturales.
+- Confundir inducción matemática con razonamiento inductivo (generalización a partir de ejemplos).
 
-Asumir P(k) verdadera (Hipótesis inductiva)
-
-Probar P(k+1) usando P(k)
-
-Concluir: ∀n∈ℕ, P(n) es verdadera
-
-text
-
-### 2. Ejemplo Clásico: Suma de los primeros n números
-**Proposición:** 1 + 2 + 3 + ... + n = n(n+1)/2
-
-**Prueba:**
-1. **Caso base (n=1):** 1 = 1(1+1)/2 = 1 ✓
-2. **Hipótesis inductiva:** Asumimos 1+2+...+k = k(k+1)/2
-3. **Paso inductivo:**
-1+2+...+k+(k+1) = k(k+1)/2 + (k+1)
-= (k(k+1) + 2(k+1))/2
-= (k+1)(k+2)/2
-= (k+1)((k+1)+1)/2 ✓
-
-text
-4. **Conclusión:** La fórmula es válida ∀n∈ℕ.
-
-### 3. Errores Comunes en Inducción
-- **Caso base incorrecto:** Probar P(0) cuando necesitas P(1)
-- **Salto lógico:** Asumir P(k+1) en lugar de demostrarlo
-- **Generalización incorrecta:** Extender más allá del dominio
-## 🖧 Aplicación directa a ingeniería
-
-La inducción matemática modela sistemas donde:
-- el estado inicial es válido
-- cada transición preserva la propiedad
-
-Esto aplica directamente a:
-- protocolos de red
-- máquinas de estado
-- seguridad
-- sistemas distribuidos
-
-Muchos errores críticos no son fallos de código,
-sino violaciones del paso inductivo.
+## 5. Conclusión Técnica
+La inducción proporciona un marco formal para razonar sobre la escalabilidad y la consistencia en sistemas distribuidos como las redes. Transforma la pregunta "¿funcionará para 1000 dispositivos?" en la verificación de un caso base y un paso inductivo robusto. Este pensamiento es fundamental para diseñar despliegues, protocolos y herramientas de automatización que deben operar a escala con predictibilidad.
